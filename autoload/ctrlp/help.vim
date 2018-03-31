@@ -137,7 +137,7 @@ function! ctrlp#help#accept(mode, str)
   elseif ( "t" == a:mode || ("e" == a:mode && "t" == g:ctrlp_help_default_mode))
     exe "tab help " . name
   else
-    exe "help " . name
+    exe "noautocmd help " . name
   endif
 endfunction
 
